@@ -1,5 +1,3 @@
-console.log("Server all right, working fine!");
-
 const weatherForm = document.querySelector("form");
 const searchInput = document.querySelector("input");
 const messageOne = document.querySelector("#message-1");
