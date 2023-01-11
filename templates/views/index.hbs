@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="/css/styles.css" />
+	<title>Weather</title>
+</head>
+
+<body>
+	<div class="main-content">
+		{{>header}}
+
+		<div id="desc-container">
+			<p id="desc">This app fetches weather information for specified locations.</p>
+			<p id="desc">Begin by entering an address in the search bar below.</p>
+		</div>
+
+		<form>
+			<input placeholder="Enter Address">
+			<button>Search</button>
+
+
+			<h2>Location</h2>
+			<div id="message-container">
+				<p id="message-1"></p>
+			</div>
+
+			<h2>Forecast</h2>
+			<div id="message-container">
+				<p id="message-2"></p>
+			</div>
+		</form>
+	</div>
+
+	<footer class="main">
+		Created by Bright Dikko</a>
+	</footer>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>
