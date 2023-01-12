@@ -13,9 +13,10 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback(`${body.error.message}`, undefined);
         } else {
+            const localTime = body.location.localtime.slice(-5);
             callback(
                 undefined,
-                `${body.current.condition.text}. It is currently ${body.current.temp_f} degrees outside. It feels like ${body.current.feelslike_f} degrees outside.`
+                `${body.current.condition.text}. It is currently ${body.current.temp_f} degrees outside. It feels like ${body.current.feelslike_f} degrees outside. \nThe local time is ${localTime}.`
             );
         }
     });

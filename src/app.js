@@ -24,7 +24,7 @@ hbs.registerPartials(partialsPath);
 app.set("view engine", "hbs");
 app.set("views", viewsPath);
 
-app.get("", (req, res) => {
+app.get("/", (req, res) => {
     res.render("index", {
         title: "Weather Forecast",
         name: "Aang",
